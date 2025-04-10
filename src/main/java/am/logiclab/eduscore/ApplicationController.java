@@ -18,12 +18,27 @@ public class ApplicationController {
 
     @GetMapping("/login")
     public String login() {
-        return "login"; // login.html
+        return "login";
     }
 
     @GetMapping("/register")
     public String register() {
-        return "register"; // register.html
+        return "register";
+    }
+
+    @GetMapping("/dashboard")
+    public String dashboard() {
+        return "dashboard";
+    }
+
+    @GetMapping("/teacher-panel")
+    public String teacher() {
+        return "teacher-panel";
+    }
+
+    @GetMapping("/admin-panel")
+    public String admin() {
+        return "admin-panel";
     }
 
 }
