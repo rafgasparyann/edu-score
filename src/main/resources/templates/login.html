@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Մուտք գործել</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1a73e8;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a73e8;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #155ab6;
+    }
+
+    .link {
+      margin-top: 10px;
+      display: block;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Մուտք գործել</h2>
+  <form>
+    <input type="email" placeholder="Էլ․ փոստ" required>
+    <input type="password" placeholder="Գաղտնաբառ" required>
+    <button type="submit">Մուտք</button>
+  </form>
+  <a href="/register" class="link">Դեռ չունե՞ք հաշիվ։ Գրանցվել</a>
+</div>
+
+</body>
+</html>

@@ -15,4 +15,15 @@ public class ApplicationController {
     public String test() {
         return "start";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login"; // login.html
+    }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register"; // register.html
+    }
+
 }
