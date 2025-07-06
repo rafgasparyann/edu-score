@@ -1,5 +1,6 @@
 package am.logiclab.eduscore.model;
 
-public class Student extends Human {
-    private int groupNumber;
+public abstract class Student extends Human {
+    private String groupNumber;
+
 }

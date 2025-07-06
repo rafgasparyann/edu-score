@@ -1,5 +1,8 @@
 package am.logiclab.eduscore.model;
 
+import java.util.TreeMap;
+
 public class Teacher extends Human{
-    private int[] groups;
+    private TreeMap<String, String> GroupWithSubjects;
+
 }

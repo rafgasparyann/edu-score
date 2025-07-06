@@ -4,9 +4,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
-import lombok.Getter;
 
-@Getter
 @MappedSuperclass
 public class Human {
     @Id
@@ -25,6 +23,19 @@ public class Human {
             throw new IllegalArgumentException("Անունը պետք է լինի իրական ձևաչափով՝ 'Անուն Ազգանուն'");
         }
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
 
 
 }
